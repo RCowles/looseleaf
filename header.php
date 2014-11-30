@@ -23,15 +23,38 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'looseleaf' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
+		<div class="wrapper">
+			<div class="site-branding">
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			</div>
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle"><?php _e( 'Primary Menu', 'looseleaf' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', 'looseleaf' ); ?></button>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- #site-navigation -->
+		</div><!-- .wrapper !-->
 	</header><!-- #masthead -->
+
+	<?php if ( is_front_page() ) {?>
+
+	<div class="frontpage-header">
+		<section id="welcome" class="wrapper">
+		 	<!-- Temporary until I flesh out a welcome.php !-->
+
+			<?php if ( get_header_image() ) : ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="welcome-image">
+				<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
+			</a>
+			<?php endif; // End header image check. ?>
+
+			<h1 class="welcome-message">
+				Hello. I'm Ryan. <br>I build websites with WordPress.
+			</h1>
+
+		 </section>
+	 </div><!-- .frontpage-header !-->
+
+	<?php } ?>
 
 	<div id="content" class="site-content">

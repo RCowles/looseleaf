@@ -1,0 +1,9 @@
+.fullwidth.content-area {
+	float: left;
+	margin: 0;
+	max-width: $size__site-main;
+
+	.site-main {
+		margin: 0;
+	}
+}

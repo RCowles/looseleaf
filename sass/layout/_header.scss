@@ -1,0 +1,49 @@
+//.site-branding,
+//.site-navigation {
+//.main-navigation .menu,
+//#welcome
+.wrapper {
+	margin: 0 auto;
+	max-width: $size__wrapper-width;
+
+	/*&:before,
+	&:after  {
+		content: '';
+		display: table;
+	}*/
+}
+
+.site-branding {
+	float: left;
+}
+
+.main-navigation {
+	//background: darken($color__blue-dark, 30%);
+	//overflow: hidden;
+
+	/*&:before,
+	&:after {
+		content: '';
+		display: table;
+	}*/
+}
+
+/* Welcome */
+.frontpage-header {
+	background: #000;
+	overflow: hidden;
+
+	.welcome-image {
+		float: left;
+		width: $size__site-sidebar;
+	}
+
+	h1.welcome-message {
+		clear: none;
+		color: #fff;
+		float: left;
+		font-size: 48px;
+		//width: $size__site-main;
+		width: 60%;
+	}
+}

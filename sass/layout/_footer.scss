@@ -1,0 +1,18 @@
+#tertiary {
+	margin: 0 auto;
+	max-width: $size__wrapper-width;
+}
+
+.site-footer {
+	clear: both;
+	margin: 0 auto;
+	width: $size__site-main;
+
+	.site-info {
+		//background: lighten($color__blue-dark, 10%);
+		clear: both;
+		margin: 0 auto;
+		margin: 0 auto;
+		max-width: $size__wrapper-width;
+	}
+}

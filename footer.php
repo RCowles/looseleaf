@@ -11,6 +11,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
+		<div id="tertiary" class="footer-widget-area" role="complementary">
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		</div><!-- #tertiary !-->
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'looseleaf' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'looseleaf' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

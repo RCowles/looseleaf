@@ -38,7 +38,7 @@ function looseleaf_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -63,9 +63,12 @@ function looseleaf_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'looseleaf_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'f2f2f2',
 		'default-image' => '',
 	) ) );
+
+	// Add support for Jetpack's Portfolio CPT
+	add_theme_support( 'jetpack-portfolio' );
 }
 endif; // looseleaf_setup
 add_action( 'after_setup_theme', 'looseleaf_setup' );
@@ -82,8 +85,26 @@ function looseleaf_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Frontpage', 'looseleaf' ),
+		'id'            => 'frontpage-widgets',
+		'description'   => __( 'These widgets will appear beneath the header on the frontpage.', 'looseleaf' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer', 'looseleaf' ),
+		'id'            => 'footer-widgets',
+		'description'   => __( 'These widgets will appear in the footer.', 'looseleaf' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h4 class="widget-title">',
+		'after_title'   => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'looseleaf_widgets_init' );
@@ -107,7 +128,7 @@ add_action( 'wp_enqueue_scripts', 'looseleaf_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.

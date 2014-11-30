@@ -1,3 +1,30 @@
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
+
+h1 {
+	font-size: 200%;
+
+	&.site-title {
+
+		a,
+		a:visited,
+		a:active {
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				color: $color__blue-light;
+			}
+		}
+	}
+}
+
+h2 {
+	font-size: 160%;
+
+	&.site-description {
+		color: $color__gray-light;
+		font-size: 120%;
+	}
+}
