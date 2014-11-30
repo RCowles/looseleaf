@@ -17,6 +17,15 @@
 	float: left;
 }
 
+.site-logo-link {
+	float: left;
+
+	img {
+		@include border-radius(200px);
+		max-width: 100px;
+	}
+}
+
 .main-navigation {
 	//background: darken($color__blue-dark, 30%);
 	//overflow: hidden;

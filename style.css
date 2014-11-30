@@ -306,6 +306,15 @@ body {
 .site-branding {
   float: left; }
 
+.site-logo-link {
+  float: left; }
+  .site-logo-link img {
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    -webkit-border-radius: 200px;
+    border-radius: 200px;
+    max-width: 100px; }
+
 .main-navigation {
   /*&:before,
   &:after {
