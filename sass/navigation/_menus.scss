@@ -1,9 +1,5 @@
 .main-navigation {
-	//clear: both;
-	//display: block;
 	float: right;
-	//margin-top: 1em;
-	//width: 100%;
 
 	ul {
 		list-style: none;
@@ -53,13 +49,20 @@
 		}
 	}
 	a {
+		color: $color__blue-light;
 		display: block;
 		text-decoration: none;
+
+		&:hover {
+			color: $color__gray-light;
+		}
 	}
 
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+		border-bottom: 2px solid $color__blue-light;
+		color: $color__gray-light;
 	}
 }
 

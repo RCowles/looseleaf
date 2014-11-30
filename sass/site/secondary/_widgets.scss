@@ -5,11 +5,27 @@
 	select {
 		max-width: 100%;
 	}
+
+	ul {
+		margin: 0;
+	}
 }
 
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+
+/* Secondary widgets */
+#secondary .widget {
+
+	//background: $color__gray-light;
+
+	h3 {
+		//background: $color__blue-light;
+		color: $color__blue;
+		//padding: .6em;
+	}
 }
 
 /* Front Page widgets */

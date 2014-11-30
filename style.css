@@ -52,6 +52,8 @@ Really light blue: D0F3FF
 
 Light gray: F2F2F2
 */
+/* Temporary */
+@import url(http://fonts.googleapis.com/css?family=Glegoo:400,700|Cabin:400,600,700|Ropa+Sans|Bitter:400,700|Crete+Round|Rokkitt|Montserrat:400,700|Oswald:400,700|Roboto+Slab:400,700|Signika:400,700,600|Nunito|Bree+Serif|Inconsolata:400,700|Varela+Round|Sanchez);
 /*--------------------------------------------------------------
 1.0 Reset
 --------------------------------------------------------------*/
@@ -151,7 +153,8 @@ textarea {
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Sanchez", serif; }
 
 h1 {
   font-size: 200%; }
@@ -285,10 +288,11 @@ body {
 #colophon {
   background: #4F8699;
   clear: both;
-  padding: 2em 0; }
+  padding: 1.6em 0; }
 
 #content {
   background: #ffffff;
+  margin: 1.6em auto;
   padding: 1.6em; }
 
 /*--------------------------------------------------------------
@@ -313,7 +317,8 @@ body {
     /* stops bg color from leaking outside the border: */
     -webkit-border-radius: 200px;
     border-radius: 200px;
-    max-width: 100px; }
+    margin-right: 1em;
+    max-width: 80px; }
 
 .main-navigation {
   /*&:before,
@@ -334,6 +339,7 @@ body {
     color: #fff;
     float: left;
     font-size: 48px;
+    text-align: center;
     width: 60%; }
 
 /*--------------------------------------------------------------
@@ -361,6 +367,8 @@ body {
   float: left;
   margin: 0 -25% 0 0;
   width: 100%; }
+  .content-area .hentry {
+    margin: 0 4em 0 0; }
 
 .site-main {
   margin: 0 25% 0 0; }
@@ -534,8 +542,16 @@ a {
     padding: 1em;
     position: relative; }
   .main-navigation a {
+    color: #84DFFF;
     display: block;
     text-decoration: none; }
+    .main-navigation a:hover {
+      color: #F2F2F2; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    border-bottom: 2px solid #84DFFF;
+    color: #F2F2F2; }
 
 /* Small menu */
 .menu-toggle {
@@ -651,10 +667,16 @@ a {
   /* Make sure select elements fit in widgets */ }
   .widget select {
     max-width: 100%; }
+  .widget ul {
+    margin: 0; }
 
 /* Search widget */
 .widget_search .search-submit {
   display: none; }
+
+/* Secondary widgets */
+#secondary .widget h3 {
+  color: #69B3CC; }
 
 /* Front Page widgets */
 #frontpage-widgets .widget {
