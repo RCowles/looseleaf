@@ -30,6 +30,8 @@
 
 /* Front Page widgets */
 #frontpage-widgets {
+	clear: both;
+	overflow: hidden;
 
 	.widget {
 		clear: none;

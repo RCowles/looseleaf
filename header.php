@@ -36,6 +36,12 @@
 		</div><!-- .wrapper !-->
 	</header><!-- #masthead -->
 
-	<?php get_template_part( 'welcome' ); ?>
+	<?php if ( is_front_page() ) {?>
+		<?php get_template_part( 'welcome' ); ?>
+
+		<div id="frontpage-widgets" class="wrapper">
+			<?php dynamic_sidebar( 'frontpage-widgets' ); ?>
+		</div><!-- #frontpage-widgets !-->
+	<?php } ?>
 
 	<div id="content" class="site-content">

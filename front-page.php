@@ -7,10 +7,6 @@
 
 get_header(); ?>
 
-	<div id="frontpage-widgets">
-		<?php dynamic_sidebar( 'frontpage-widgets' ); ?>
-	</div><!-- #frontpage-widgets !-->
-
 	<div id="primary" class="content-area">
 
 		<main id="main" class="site-main" role="main">
