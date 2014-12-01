@@ -5,8 +5,20 @@
 
 .site-footer {
 	clear: both;
+	color: $color__gray-light;
 	margin: 0 auto;
 	width: $size__site-main;
+
+	a,
+	a:active,
+	a:visited {
+		color: $color__blue-light;
+		text-decoration: none;
+
+		&:hover {
+			color: lighten($color__blue-light, 10%);
+		}
+	}
 
 	.site-info {
 		//background: lighten($color__blue-dark, 10%);

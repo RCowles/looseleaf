@@ -1,6 +1,9 @@
 /* Temporary */
 @import url(http://fonts.googleapis.com/css?family=Glegoo:400,700|Cabin:400,600,700|Ropa+Sans|Bitter:400,700|Crete+Round|Rokkitt|Montserrat:400,700|Oswald:400,700|Roboto+Slab:400,700|Signika:400,700,600|Nunito|Bree+Serif|Inconsolata:400,700|Varela+Round|Sanchez);
-$font__main: sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic);
+@import url(http://fonts.googleapis.com/css?family=Poly:400,400italic);
+$font__main: 'Lato', sans-serif;
+//$font__main: 'Poly', serif;
 $font__headline: 'Sanchez', serif;//Bitter, Rokkitt, Roboto Slab, Sanchez
 
 //$font__main: sans-serif;

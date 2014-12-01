@@ -1,16 +1,6 @@
-//.site-branding,
-//.site-navigation {
-//.main-navigation .menu,
-//#welcome
 .wrapper {
 	margin: 0 auto;
 	max-width: $size__wrapper-width;
-
-	/*&:before,
-	&:after  {
-		content: '';
-		display: table;
-	}*/
 }
 
 .site-branding {
@@ -28,14 +18,7 @@
 }
 
 .main-navigation {
-	//background: darken($color__blue-dark, 30%);
-	//overflow: hidden;
 
-	/*&:before,
-	&:after {
-		content: '';
-		display: table;
-	}*/
 }
 
 /* Welcome */
@@ -43,16 +26,22 @@
 	background: #000;
 	overflow: hidden;
 
-	.welcome-image {
+	#welcome {
+		padding: 1.6em 0;
+	}
+
+	/*.welcome-image {
 		float: left;
 		width: $size__site-sidebar;
-	}
+	}*/
 
 	h1.welcome-message {
 		clear: none;
 		color: #fff;
-		float: left;
-		font-size: 48px;
+		//float: left;
+		font-size: 300%;
+		margin: 0 auto;
+		padding: 1em;
 		text-align: center;
 		width: 60%;
 	}

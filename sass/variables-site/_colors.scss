@@ -3,7 +3,10 @@ $color__blue: #69B3CC;
 $color__blue-light: #84DFFF;
 $color__blue-light-light: #D0F3FF; /* I'll fix the name later */
 $color__gray-light: #F2F2F2;
+$color__gray: #7C7C7C;
+$color__red: darken(#e14d43, 20%);
 
+$color__background-dark: $color__blue-dark;
 $color__background-body: #fff;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
@@ -24,12 +27,3 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
-/*
-Dark blue: 4F8699
-Blue: 69B3CC
-Light blue: 84DFFF
-Really light blue: D0F3FF
-
-Light gray: F2F2F2
-*/
