@@ -24,25 +24,20 @@
 /* Welcome */
 .frontpage-header {
 	background: #000;
+	margin-bottom: 2.6em;
 	overflow: hidden;
+	text-align: center;
 
 	#welcome {
 		padding: 1.6em 0;
 	}
 
-	/*.welcome-image {
-		float: left;
-		width: $size__site-sidebar;
-	}*/
-
-	h1.welcome-message {
+	.welcome-message h1 {
 		clear: none;
 		color: #fff;
-		//float: left;
-		font-size: 300%;
+		@include font-size(4.8);
 		margin: 0 auto;
 		padding: 1em;
-		text-align: center;
 		width: 60%;
 	}
 }

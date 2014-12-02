@@ -27,7 +27,7 @@ function looseleaf_custom_header_setup() {
 		'default-image'          => '',
 		'default-text-color'     => 'ffffff',
 		'width'                  => 250,
-		'height'                 => 250,
+		'height'                 => 300,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'looseleaf_header_style',
 		'admin-head-callback'    => 'looseleaf_admin_header_style',

@@ -19,85 +19,17 @@
 /* Secondary widgets */
 #secondary .widget {
 
-	//background: $color__gray-light;
-
 	h3 {
-		//background: $color__blue-light;
-		color: $color__blue;
-		//padding: .6em;
+		border-left: 4px solid $color__blue-light;
+		color: $color__gray;
+		line-height: 16px;
+		margin: .6em 0 .4em 0;
+		padding: 0 0 0 4px;
 	}
 }
 
-/* Front Page widgets */
-#frontpage-widgets {
-	clear: both;
-	overflow: hidden;
-
-	.widget {
-		clear: none;
-		float: left;
-		margin-right: 3.7%;
-		width: 30.85%;
-
-		&:nth-child(3n) {
-			margin-right: 0;
-		}
-	}
-
-	.widget_image {
-		display: block;
-		padding: 1.6em;
-		position: relative;
-		text-align: center;
-
-		.widget-title {
-			@include border-radius(400px);
-			background: $color__blue-dark;
-			color: #fff;
-			cursor: pointer;
-			line-height: 200px;
-			position: absolute;
-				bottom: 0;
-				left: 0;
-			height: 100%;
-			opacity: 0;
-			    -webkit-transition: all 300ms;
-			    -moz-transition: all 300ms;
-			    -o-transition: all 300ms;
-			    -ms-transition: all 300ms;
-			    transition: all 300ms;
-			width: 100%;
-			z-index: 9999;
-
-			&:hover {
-				opacity: 0.8;
-			}
-		}
-
-		a {
-			img {
-				@include border-radius(400px);
-				//position: absolute;
-			}
-
-			&:hover {
-
-			}
-		}
-	}
-}
+/* Frontpage widgets */
+@import "frontpage";
 
 /* Footer  widgets */
-#tertiary {
-
-	.widget {
-		clear: none;
-		float: left;
-		margin-right: 3%;
-		width: 22%;
-
-		&:nth-child(4n) {
-			margin-right: 0;
-		}
-	}
-}
+@import "footer";

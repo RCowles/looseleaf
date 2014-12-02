@@ -10,8 +10,10 @@
 		</a>
 		<?php endif; // End header image check. ?>
 		*/ ?>
-
-		<h1 class="welcome-message">Hello. I'm Ryan. I build websites with WordPress.</h1>
+		<div class="welcome-message">
+			<h1>Hello. I'm Ryan. I build websites with WordPress.</h1>
+			<p><a href="#" class="button large-btn">Get in touch</a></p>
+		</div><!-- .welcome-message !-->
 
 	</section>
 </div><!-- .frontpage-header !-->
