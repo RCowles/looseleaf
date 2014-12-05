@@ -17,6 +17,11 @@ body {
 	background: #ffffff;
 	margin: 1.6em auto;
 	padding: 1.6em;
+
+	.home & {
+		background: none;
+		padding: 1.6em 0;
+	}
 }
 
 /*--------------------------------------------------------------

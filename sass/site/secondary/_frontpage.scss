@@ -11,7 +11,7 @@
 
 		@include bp(medium) {
 			float: none;
-			margin-right: 0;
+			margin: 1.6em 0;
 			width: auto;
 		}
 
@@ -22,27 +22,27 @@
 
 	.widget_image {
 		display: block;
-		padding: 0.6em;
-		position: relative;
+		//padding: 0.6em;
+		//position: relative;
 		text-align: center;
 
 		.widget-title {
-			@include border-radius(1200px);
-			background: $color__blue-dark;
-			color: #fff;
-			cursor: pointer;
-			line-height: 200px;
-			position: absolute;
-				bottom: 0;
-				left: 0;
-			height: 100%;
-			opacity: 0;
+			//@include border-radius(1200px);
+			//background: $color__blue-dark;
+			//color: #fff;
+			//cursor: pointer;
+			//line-height: 200px;
+			//position: absolute;
+			//	bottom: 0;
+			//	left: 0;
+			//height: 100%;
+			//opacity: 0;
 			@include transition(all, 200ms, linear);
-			width: 100%;
-			z-index: 9999;
+			//width: 100%;
+			//z-index: 9999;
 
 			&:hover {
-				opacity: 0.8;
+			//	opacity: 0.8;
 			}
 		}
 

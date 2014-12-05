@@ -5,6 +5,13 @@
 
 .site-branding {
 	float: left;
+
+	@include bp(medium) {
+		float: none;
+		margin: 1.6em 0;
+		text-align: center;
+		width: auto;
+	}
 }
 
 .site-logo-link {

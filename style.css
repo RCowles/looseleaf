@@ -295,6 +295,9 @@ body {
   background: #ffffff;
   margin: 1.6em auto;
   padding: 1.6em; }
+  .home #content {
+    background: none;
+    padding: 1.6em 0; }
 
 /*--------------------------------------------------------------
 .2 Header
@@ -305,6 +308,12 @@ body {
 
 .site-branding {
   float: left; }
+  @media (max-width: 640px) {
+    .site-branding {
+      float: none;
+      margin: 1.6em 0;
+      text-align: center;
+      width: auto; } }
 
 .site-logo-link {
   float: left; }
@@ -518,6 +527,11 @@ a {
 --------------------------------------------------------------*/
 .main-navigation {
   float: right; }
+  @media (max-width: 640px) {
+    .main-navigation {
+      clear: both;
+      float: none;
+      width: 100%; } }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -701,38 +715,19 @@ a {
     @media (max-width: 640px) {
       #frontpage-widgets .widget {
         float: none;
-        margin-right: 0;
+        margin: 1.6em 0;
         width: auto; } }
     #frontpage-widgets .widget:nth-child(3n) {
       margin-right: 0; }
   #frontpage-widgets .widget_image {
     display: block;
-    padding: 0.6em;
-    position: relative;
     text-align: center; }
     #frontpage-widgets .widget_image .widget-title {
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */
-      -webkit-border-radius: 1200px;
-      border-radius: 1200px;
-      background: #4F8699;
-      color: #fff;
-      cursor: pointer;
-      line-height: 200px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 100%;
-      opacity: 0;
       -webkit-transition: all 200ms linear;
       -moz-transition: all 200ms linear;
       -ms-transition: all 200ms linear;
       -o-transition: all 200ms linear;
-      transition: all 200ms linear;
-      width: 100%;
-      z-index: 9999; }
-      #frontpage-widgets .widget_image .widget-title:hover {
-        opacity: 0.8; }
+      transition: all 200ms linear; }
     #frontpage-widgets .widget_image a img {
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
