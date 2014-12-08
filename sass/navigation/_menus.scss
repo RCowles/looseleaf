@@ -13,7 +13,6 @@
 		padding-left: 0;
 
 		ul {
-			//background: $color__background-screen;
 			background: darken($color__background-dark, 10%);
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -77,6 +76,7 @@
 /* Small menu */
 .menu-toggle {
 	display: none;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -93,7 +93,7 @@
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 0 4em 1.5em 0;
 	overflow: hidden;
 }
 

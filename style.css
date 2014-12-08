@@ -307,11 +307,16 @@ body {
   max-width: 1200px; }
 
 .site-branding {
-  float: left; }
+  float: left;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear; }
   @media (max-width: 640px) {
     .site-branding {
       float: none;
-      margin: 1.6em 0;
+      margin: 1.6em auto;
       text-align: center;
       width: auto; } }
 
@@ -324,6 +329,16 @@ body {
     border-radius: 200px;
     margin-right: 1em;
     max-width: 80px; }
+  @media (max-width: 640px) {
+    .site-logo-link {
+      display: block;
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      width: auto; }
+      .site-logo-link img {
+        margin-right: 0;
+        max-width: 180px; } }
 
 /* Welcome */
 .frontpage-header {
@@ -571,7 +586,8 @@ a {
 
 /* Small menu */
 .menu-toggle {
-  display: none; }
+  display: none;
+  margin: 0 auto; }
 
 @media screen and (max-width: 600px) {
   .menu-toggle,
@@ -583,7 +599,7 @@ a {
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0 4em 1.5em 0;
   overflow: hidden; }
 
 .comment-navigation .nav-previous,
@@ -719,10 +735,25 @@ a {
         width: auto; } }
     #frontpage-widgets .widget:nth-child(3n) {
       margin-right: 0; }
+    #frontpage-widgets .widget img {
+      border: 0px solid #84DFFF;
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -ms-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      transition: all 200ms linear; }
+    #frontpage-widgets .widget:hover img {
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -ms-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      transition: all 200ms linear; }
   #frontpage-widgets .widget_image {
     display: block;
     text-align: center; }
     #frontpage-widgets .widget_image .widget-title {
+      font-size: 24px;
+      font-size: 2.4rem;
       -webkit-transition: all 200ms linear;
       -moz-transition: all 200ms linear;
       -ms-transition: all 200ms linear;
@@ -788,6 +819,13 @@ a {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+/* Blog */
+.entry-header h1.entry-title a {
+  text-decoration: none; }
+.entry-header .entry-meta {
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 /*--------------------------------------------------------------
 10.2 Asides

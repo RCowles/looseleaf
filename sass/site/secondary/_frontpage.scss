@@ -6,7 +6,7 @@
 		clear: none;
 		float: left;
 		margin-right: 3.7%;
-		width: 30.85%;
+		width: 30.85%;	
 		@include transition(all, 200ms, linear);
 
 		@include bp(medium) {
@@ -18,6 +18,18 @@
 		&:nth-child(3n) {
 			margin-right: 0;
 		}
+
+		img {
+			//transform: scale(0.96);
+			border: 0px solid $color__blue-light;
+			@include transition(all, 200ms, linear);
+		}
+
+		&:hover img {
+			//border: 10px solid $color__blue-light;
+			@include transition(all, 200ms, linear);
+			//transform: scale(1.0);
+		}
 	}
 
 	.widget_image {
@@ -27,6 +39,7 @@
 		text-align: center;
 
 		.widget-title {
+			@include font-size(2.4);
 			//@include border-radius(1200px);
 			//background: $color__blue-dark;
 			//color: #fff;
