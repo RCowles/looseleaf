@@ -404,11 +404,35 @@ body {
   width: 25%; }
 
 .fullwidth.content-area {
-  float: left;
+  float: none;
   margin: 0;
   max-width: 100%; }
+  .fullwidth.content-area .hentry {
+    margin: 0; }
   .fullwidth.content-area .site-main {
     margin: 0; }
+  .fullwidth.content-area .site-main .comment-navigation,
+  .fullwidth.content-area .site-main .paging-navigation,
+  .fullwidth.content-area .site-main .post-navigation {
+    margin: 0 0 1.5em 0;
+    overflow: hidden; }
+
+.portfolio-sidebar .post-navigation {
+  clear: both; }
+.portfolio-sidebar ul {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .portfolio-sidebar ul li a {
+    border: 2px solid #69B3CC;
+    float: left;
+    margin: 0.2em;
+    padding: 0.2em 0.4em;
+    text-decoration: none; }
+    .portfolio-sidebar ul li a:hover {
+      background: #69B3CC;
+      color: #fff; }
 
 /*--------------------------------------------------------------
 4.0 Forms
