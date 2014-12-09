@@ -5,8 +5,8 @@
 .hentry {
 	color: $color__gray;
 	border-bottom: 4px solid $color__gray-light;
-	margin: 0 4em 2em 0;
-	padding: 0 0 2em 0;
+	margin: 0 4em 3em 0;
+	padding: 0 0 3em 0;
 }
 
 .byline,
@@ -55,7 +55,8 @@
 	.posted-on,
 	.byline,
 	.cat-links,
-	.tags-links {
+	.tags-links,
+	.comments-link {
 		margin-right: 1em;
 	}
 
@@ -71,8 +72,44 @@
 			padding: 0.2em 0.4em;
 
 			&:hover {
+				//background: $color__blue;
+				//border: 2px solid $color__blue;
+				background: $color__gray;
+				border: 2px solid $color__gray;
+				color: #fff;
+			}
+		}
+	}
+
+	.cat-links {
+		.dashicons {
+			background: $color__blue;
+			border: 2px solid  $color__blue;
+		}
+
+		a {
+			border: 2px solid $color__blue;
+			color: $color__gray;
+
+			&:hover {
 				background: $color__blue;
-				border: 2px solid $color__blue;
+				border: 2px solid  $color__blue;
+				color: #fff;
+			}
+		}
+	}
+
+	.tags-links {
+		.dashicons {
+			background: $color__gray;
+			border: 2px solid  $color__gray;
+		}
+		a {
+			border: 2px solid $color__gray;
+			color: $color__gray;
+
+			&:hover {
+				background: $color__gray;
 				color: #fff;
 			}
 		}
@@ -87,7 +124,7 @@
 		//text-align: center;
 		//vertical-align: middle;
 		//background: $color__blue;
-		background: $color__gray;
+		//background: $color__gray;
 		color: #fff;
 		line-height: inherit;
 		padding: 0.2em 0.4em;
@@ -95,7 +132,7 @@
 		//padding: 0 .4em;
 		width: auto;
 		//border: 2px solid $color__blue;
-		border: 2px solid  $color__gray;
+		//border: 2px solid  $color__gray;
 		//border: 1px solid $color__blue;
 		@include font-size(1.4);
 	}
