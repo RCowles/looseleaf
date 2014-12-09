@@ -4,6 +4,9 @@
 
 .hentry {
 	color: $color__gray;
+	//border-bottom: 4px solid $color__gray-light;
+	margin: 0 4em 4em 0;
+	padding: 0 0 4em 0;
 }
 
 .byline,
@@ -28,15 +31,67 @@
 }
 
 /* Blog */
-
 .entry-header {
 	h1.entry-title {
 		a {
 			text-decoration: none;
 		}
 	}
+}
 
-	.entry-meta {
-		@include font-size(1.4);
+.entry-meta,
+.entry-footer {
+	@include font-size(1.4);
+
+	a {
+		text-decoration: none;
+	}
+
+	.dashicons {
+		color: lighten($color__gray, 20%);
+		//color: $color__blue;
+	}
+
+	.posted-on,
+	.byline,
+	.cat-links,
+	.tags-links {
+		margin-right: 1em;
+	}
+
+	.cat-links,
+	.tags-links {
+
+		a {
+			border: 2px solid $color__blue;
+			display: inline-block;
+			margin: 0.2em 0.2em 0.2em 0;
+			padding: 0.2em 0.4em;
+
+			&:hover {
+				background: $color__blue;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.entry-footer {
+
+	.dashicons {
+
+	}
+
+	.dashicons:before {
+		background: $color__blue;
+		color: #fff;
+		//clear: both;
+		//display: inline-block;
+		//float: left;
+		//margin: 0.2em;
+		//padding: 0.2em 0.4em;
+		text-align: center;
+		vertical-align: middle;
+		width: 42px;
 	}
 }

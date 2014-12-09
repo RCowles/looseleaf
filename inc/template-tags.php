@@ -79,12 +79,12 @@ function looseleaf_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( 'Posted on %s', 'post date', 'looseleaf' ),
+		_x( '<span class="dashicons dashicons-calendar-alt"></span> %s', 'post date', 'looseleaf' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( 'by %s', 'post author', 'looseleaf' ),
+		_x( '<span class="dashicons dashicons-admin-users"></span> %s', 'post author', 'looseleaf' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -101,15 +101,15 @@ function looseleaf_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'looseleaf' ) );
+		$categories_list = get_the_category_list( __( ' ', 'looseleaf' ) );
 		if ( $categories_list && looseleaf_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'looseleaf' ) . '</span>', $categories_list );
+			printf( '<span class="dashicons dashicons-category"></span><span class="cat-links">' . __( ' %1$s', 'looseleaf' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'looseleaf' ) );
+		$tags_list = get_the_tag_list( '<span class="dashicons dashicons-tag"></span>', __( '<span class="dashicons dashicons-tag"></span>', 'looseleaf' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'looseleaf' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( ' %1$s', 'looseleaf' ) . '</span>', $tags_list );
 		}
 	}
 
