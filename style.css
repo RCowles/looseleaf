@@ -417,22 +417,44 @@ body {
     margin: 0 0 1.5em 0;
     overflow: hidden; }
 
-.portfolio-sidebar .post-navigation {
-  clear: both; }
-.portfolio-sidebar ul {
-  clear: both;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .portfolio-sidebar ul li a {
-    border: 2px solid #69B3CC;
-    float: left;
-    margin: 0.2em;
-    padding: 0.2em 0.4em;
-    text-decoration: none; }
-    .portfolio-sidebar ul li a:hover {
-      background: #69B3CC;
-      color: #fff; }
+.portfolio-sidebar {
+  margin-top: 4.1em;
+  /* .entry-content top margin + h1.entry-title line-height - h3 top margin*/ }
+  .portfolio-sidebar .post-navigation {
+    clear: both; }
+    .portfolio-sidebar .post-navigation:before, .portfolio-sidebar .post-navigation:after {
+      content: "";
+      display: table; }
+    .portfolio-sidebar .post-navigation a {
+      text-decoration: none; }
+  .portfolio-sidebar h3 {
+    border-left: 4px solid #84DFFF;
+    color: #7C7C7C;
+    display: block;
+    line-height: 16px;
+    margin: .6em 0 .4em 0;
+    padding: 0 0 0 4px; }
+  .portfolio-sidebar ul {
+    clear: both;
+    list-style: none;
+    margin: 0 0 1.6em 0;
+    padding: 0; }
+    .portfolio-sidebar ul:before, .portfolio-sidebar ul:after {
+      content: "";
+      display: table; }
+    .portfolio-sidebar ul:after {
+      clear: both; }
+    .portfolio-sidebar ul li {
+      display: inline; }
+      .portfolio-sidebar ul li a {
+        border: 2px solid #69B3CC;
+        float: left;
+        margin: 0.2em;
+        padding: 0.2em 0.4em;
+        text-decoration: none; }
+        .portfolio-sidebar ul li a:hover {
+          background: #69B3CC;
+          color: #fff; }
 
 /*--------------------------------------------------------------
 4.0 Forms
