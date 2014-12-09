@@ -855,8 +855,9 @@ a {
 
 .hentry {
   color: #7C7C7C;
-  margin: 0 4em 4em 0;
-  padding: 0 0 4em 0; }
+  border-bottom: 4px solid #F2F2F2;
+  margin: 0 4em 2em 0;
+  padding: 0 0 2em 0; }
 
 .byline,
 .updated:not(.published) {
@@ -902,23 +903,29 @@ a {
   .entry-meta .tags-links a,
   .entry-footer .cat-links a,
   .entry-footer .tags-links a {
-    border: 2px solid #69B3CC;
+    border: 2px solid #7C7C7C;
+    color: #7C7C7C;
     display: inline-block;
-    margin: 0.2em 0.2em 0.2em 0;
+    margin: 0 0.2em 0.2em 0;
     padding: 0.2em 0.4em; }
     .entry-meta .cat-links a:hover,
     .entry-meta .tags-links a:hover,
     .entry-footer .cat-links a:hover,
     .entry-footer .tags-links a:hover {
       background: #69B3CC;
+      border: 2px solid #69B3CC;
       color: #fff; }
 
-.entry-footer .dashicons:before {
-  background: #69B3CC;
+.entry-footer .dashicons {
+  background: #7C7C7C;
   color: #fff;
-  text-align: center;
-  vertical-align: middle;
-  width: 42px; }
+  line-height: inherit;
+  padding: 0.2em 0.4em;
+  height: auto;
+  width: auto;
+  border: 2px solid #7C7C7C;
+  font-size: 14px;
+  font-size: 1.4rem; }
 
 /*--------------------------------------------------------------
 10.2 Asides

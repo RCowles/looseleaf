@@ -101,9 +101,9 @@ function looseleaf_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ' ', 'looseleaf' ) );
+		$categories_list = get_the_category_list( __( '<span class="dashicons dashicons-category"></span>', 'looseleaf' ) );
 		if ( $categories_list && looseleaf_categorized_blog() ) {
-			printf( '<span class="dashicons dashicons-category"></span><span class="cat-links">' . __( ' %1$s', 'looseleaf' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( '<span class="dashicons dashicons-category"></span>%1$s', 'looseleaf' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
