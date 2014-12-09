@@ -126,6 +126,10 @@ function looseleaf_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	/*if ( is_post_type_archive( 'jetpack-portfolio' ) || is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) || is_page_template( 'portfolio.php' ) ) {
+		wp_enqueue_script( 'masonry' );
+	}*/
 }
 add_action( 'wp_enqueue_scripts', 'looseleaf_scripts' );
 

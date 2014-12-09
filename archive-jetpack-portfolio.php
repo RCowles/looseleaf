@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying Portfolio archive pages.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * Learn more: http://jetpack.me/support/custom-content-types/
  *
  * @package Loose Leaf
  */

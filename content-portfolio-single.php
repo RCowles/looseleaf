@@ -6,7 +6,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php //echo get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'aligncenter' ) ); ?>
+	<?php //echo get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'aligncenter' ) );
+	 ?>
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

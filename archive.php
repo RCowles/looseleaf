@@ -62,6 +62,12 @@ get_header(); ?>
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'looseleaf' );
 
+						elseif ( is_post_type_archive( 'jetpack-portfolio' ) ) :
+							_e( 'Portfolio', 'looseleaf' );
+
+						elseif ( is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) ) :
+							single_term_title();
+
 						else :
 							_e( 'Archives', 'looseleaf' );
 

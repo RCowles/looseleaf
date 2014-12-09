@@ -417,9 +417,12 @@ body {
     margin: 0 0 1.5em 0;
     overflow: hidden; }
 
+.portfolio-entry {
+  width: 200px; }
+
 .portfolio-sidebar {
   margin-top: 4.1em;
-  /* .entry-content top margin + h1.entry-title line-height - h3 top margin*/ }
+  /* .entry-content top margin + h1.entry-title line-height - h3 top margin */ }
   .portfolio-sidebar .post-navigation {
     clear: both; }
     .portfolio-sidebar .post-navigation:before, .portfolio-sidebar .post-navigation:after {
