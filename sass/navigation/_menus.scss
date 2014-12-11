@@ -95,6 +95,10 @@
 .site-main .post-navigation {
 	margin: 0 4em 1.5em 0;
 	overflow: hidden;
+
+	a {
+		text-decoration: none;
+	}
 }
 
 .comment-navigation .nav-previous,

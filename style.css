@@ -648,6 +648,10 @@ a {
 .site-main .post-navigation {
   margin: 0 4em 1.5em 0;
   overflow: hidden; }
+  .site-main .comment-navigation a,
+  .site-main .paging-navigation a,
+  .site-main .post-navigation a {
+    text-decoration: none; }
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
@@ -932,15 +936,16 @@ a {
       color: #fff; }
   .entry-meta .tags-links .dashicons,
   .entry-footer .tags-links .dashicons {
-    background: #7C7C7C;
-    border: 2px solid #7C7C7C; }
+    background: #969696;
+    border: 2px solid #969696; }
   .entry-meta .tags-links a,
   .entry-footer .tags-links a {
-    border: 2px solid #7C7C7C;
-    color: #7C7C7C; }
+    border: 2px solid #969696;
+    color: ighten(#7C7C7C, 10%); }
     .entry-meta .tags-links a:hover,
     .entry-footer .tags-links a:hover {
-      background: #7C7C7C;
+      background: #969696;
+      border: 2px solid #969696;
       color: #fff; }
 
 .entry-footer .dashicons {
@@ -970,6 +975,34 @@ a {
 
 .bypostauthor {
   display: block; }
+
+ol.comment-list {
+  list-style: none;
+  margin: 3em 0 1.5em 0; }
+  ol.comment-list ol.children {
+    list-style: none; }
+  ol.comment-list li.comment article {
+    color: #7C7C7C;
+    border-bottom: 4px solid #F2F2F2;
+    margin: 0 4em 3em 0;
+    padding: 0 0 3em 0; }
+  ol.comment-list li.comment .comment-body .comment-meta a {
+    text-decoration: none; }
+  ol.comment-list li.comment .comment-body .comment-meta .comment-author img.avatar {
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    display: block;
+    float: left; }
+  ol.comment-list li.comment .comment-body .comment-meta .comment-author .fn {
+    margin-left: 20px; }
+  ol.comment-list li.comment .comment-body .comment-meta .comment-author .says {
+    display: none; }
+  ol.comment-list li.comment .comment-body .comment-meta .comment-metadata {
+    margin-left: 100px; }
+  ol.comment-list li.comment .comment-body .comment-content {
+    margin-left: 100px; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll
