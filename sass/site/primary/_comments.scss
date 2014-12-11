@@ -53,6 +53,7 @@ ol.comment-list {
 				}
 
 				.comment-metadata {
+					@include font-size(1.2);
 					margin-left: 100px;
 
 					a {
@@ -74,6 +75,8 @@ ol.comment-list {
 			}
 
 			.reply {
+				margin-left: 100px;
+
 				a.comment-reply-link {
 
 				}

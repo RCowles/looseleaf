@@ -8,14 +8,34 @@
 	margin: 0 (-$size__site-sidebar) 0 0;
 	//max-width: $size__content-width;
 	width: $size__site-main;
+
+	@include bp(medium) {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
 }
 
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
+
+	@include bp(medium) {
+		margin: 0;
+
+		.hentry {
+			margin: 0;
+			padding: 0;
+		}
+	}
 }
 
 .site-content .widget-area {
 	float: right;
 	overflow: hidden;
 	width: $size__site-sidebar;
+
+	@include bp(medium) {
+		float: none;
+		width: 100%;
+	}
 }

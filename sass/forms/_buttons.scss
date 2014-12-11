@@ -4,7 +4,8 @@ input[type="reset"],
 input[type="submit"],
 a.button,
 a.button:visited,
-a.button:active {
+a.button:active,
+a.comment-reply-link {
 	border: none;
 	@include border-radius(3px);
 	background: $color__background-button;
@@ -27,7 +28,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
-a.button:hover {
+a.button:hover,
+a.comment-reply-link:hover {
 	background: $color__blue-dark;
 	box-shadow: 0px 4px 0px darken($color__blue-dark, 10%), 0px 4px 4px rgba(0, 0, 0, 0.4);
 	color: $color__gray-light;
@@ -41,6 +43,11 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active,
-a.button:focus {
+a.button:focus,
+a.comment-reply-link:focus {
 
+}
+
+a.comment-reply-link {
+	@include font-size(1.4);
 }

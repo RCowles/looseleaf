@@ -122,42 +122,20 @@
 	}
 }
 
-.entry-footer {
+.entry-footer,
+.entry-meta {
 
 	.dashicons {
-		//height: 30px;
-		//width: 30px;
-		//text-align: center;
-		//vertical-align: middle;
-		//background: $color__blue;
-		//background: $color__gray;
 		color: #fff;
 		line-height: inherit;
 		padding: 0.2em 0.4em;
 		height: auto;
-		//padding: 0 .4em;
 		width: auto;
-		//border: 2px solid $color__blue;
-		//border: 2px solid  $color__gray;
-		//border: 1px solid $color__blue;
 		@include font-size(1.4);
 	}
 
 	.dashicons:before {
-		//background: $color__blue;
-		//border: 2px solid $color__blue;
-		//color: #fff;
-		//	display: block;
-		//clear: both;
-		//display: inline-block;
-		//float: left;
-		//margin: 0.2em;
-		//padding: 0.2em 0.4em;
-		//height: 30px;
-		//width: 30px;
-		//padding: 0.2em 0.4em;
-		//text-align: center;
-		//vertical-align: middle;
+
 
 	}
 }
