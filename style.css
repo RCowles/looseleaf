@@ -493,7 +493,9 @@ input[type="submit"],
 a.button,
 a.button:visited,
 a.button:active,
-a.comment-reply-link {
+a.comment-reply-link,
+a.comment-reply-link:visited,
+a.comment-reply-link:active {
   border: none;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
