@@ -50,6 +50,8 @@ a.comment-reply-link:focus {
 
 }
 
-a.comment-reply-link {
+a.comment-reply-link,
+a.comment-reply-link:visited,
+a.comment-reply-link:active  {
 	@include font-size(1.4);
 }
