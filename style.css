@@ -851,6 +851,7 @@ a {
 #tertiary {
   padding: 0 1em; }
   #tertiary .widget {
+    border-bottom: none;
     clear: none;
     float: left;
     margin-right: 3%;
