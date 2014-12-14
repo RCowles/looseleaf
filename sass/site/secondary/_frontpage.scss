@@ -20,15 +20,12 @@
 		}
 
 		img {
-			//transform: scale(0.96);
 			border: 0px solid $color__blue-light;
 			@include transition(all, 200ms, linear);
 		}
 
 		&:hover img {
-			//border: 10px solid $color__blue-light;
 			@include transition(all, 200ms, linear);
-			//transform: scale(1.0);
 		}
 	}
 
