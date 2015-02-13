@@ -185,7 +185,16 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  background: #4F8699;
+  color: #fff;
+  border-left: 4px solid #84DFFF;
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 0 1.5em 1.5em 1.5em;
+  padding: 1.6em; }
+  blockquote p:last-child {
+    margin-bottom: 0; }
 
 address {
   margin: 0 0 1.5em; }
@@ -939,6 +948,7 @@ a {
   .entry-meta .tags-links,
   .entry-footer .cat-links,
   .entry-footer .tags-links {
+    float: left;
     margin: .6em 0 0 0; }
     .entry-meta .cat-links li,
     .entry-meta .tags-links li,
@@ -999,6 +1009,10 @@ a {
   width: auto;
   font-size: 14px;
   font-size: 1.4rem; }
+
+.edit-link {
+  clear: both;
+  display: block; }
 
 /*--------------------------------------------------------------
 10.2 Asides
