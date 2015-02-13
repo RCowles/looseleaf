@@ -48,8 +48,7 @@
 	}
 
 	.dashicons {
-		color: lighten($color__gray, 20%);
-		//color: $color__blue;
+		//color: lighten($color__gray, 20%);
 	}
 
 	.posted-on,
@@ -64,7 +63,6 @@
 	.tags-links {
 
 		a {
-			//border: 2px solid $color__blue;
 			border: 2px solid  $color__gray;
 			color: $color__gray;
 			display: inline-block;
@@ -72,8 +70,6 @@
 			padding: 0.2em 0.4em;
 
 			&:hover {
-				//background: $color__blue;
-				//border: 2px solid $color__blue;
 				background: $color__gray;
 				border: 2px solid $color__gray;
 				color: #fff;
@@ -101,19 +97,15 @@
 
 	.tags-links {
 		.dashicons {
-			//background: $color__gray;
-			//border: 2px solid $color__gray;
 			background: lighten($color__gray, 10%);
 			border: 2px solid lighten($color__gray, 10%);
 		}
+
 		a {
-			//border: 2px solid $color__gray;
-			//color: $color__gray;
 			border: 2px solid lighten($color__gray, 10%);
 			color: ighten($color__gray, 10%);
 
 			&:hover {
-				//background: $color__gray;
 				background: lighten($color__gray, 10%);
 				border: 2px solid lighten($color__gray, 10%);
 				color: #fff;
@@ -126,7 +118,7 @@
 .entry-meta {
 
 	.dashicons {
-		color: #fff;
+		//color: #fff;
 		line-height: inherit;
 		padding: 0.2em 0.4em;
 		height: auto;

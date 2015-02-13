@@ -29,6 +29,7 @@ function looseleaf_custom_header_setup() {
 		'width'                  => 250,
 		'height'                 => 300,
 		'flex-height'            => true,
+		'flex-width'             => true,
 		'wp-head-callback'       => 'looseleaf_header_style',
 		'admin-head-callback'    => 'looseleaf_admin_header_style',
 		'admin-preview-callback' => 'looseleaf_admin_header_image',
