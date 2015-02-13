@@ -430,8 +430,15 @@ body {
     margin: 0 0 1.5em 0;
     overflow: hidden; }
 
+.portfolio-entry-column-3 {
+  margin-right: 0 !important;
+  margin: 2% !important;
+  width: 29% !important; }
+
 .portfolio-entry {
-  width: 200px; }
+  float: left;
+  margin-bottom: 15px;
+  text-align: center; }
 
 .portfolio-sidebar {
   margin-top: 4.1em;

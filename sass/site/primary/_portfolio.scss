@@ -2,8 +2,20 @@
 
 }
 
+.portfolio-entry-column-3 {
+	margin-right: 0 !important;
+	margin: 2% !important;
+	width: 29% !important;
+
+	h2 {
+
+	}
+}
+
 .portfolio-entry {
-	width: 200px;
+	float: left;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 .portfolio-sidebar {

@@ -129,9 +129,10 @@ function looseleaf_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	/*if ( is_post_type_archive( 'jetpack-portfolio' ) || is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) || is_page_template( 'portfolio.php' ) ) {
-		wp_enqueue_script( 'masonry' );
-	}*/
+	if ( is_post_type_archive( 'jetpack-portfolio' ) || is_tax( 'jetpack-portfolio-type' ) || is_tax( 'jetpack-portfolio-tag' ) || is_page_template( 'portfolio.php' ) ) {
+		wp_enqueue_script( 'jquery-masonry', array( 'jquery' ) );
+		wp_enqueue_script( 'looseleaf-masonry', get_template_directory_uri() . '/js/looseleaf-masonry.js', array(), '20150212', true );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'looseleaf_scripts' );
 
