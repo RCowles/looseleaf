@@ -47,6 +47,8 @@
 		padding: 0 0 0 4px;
 	}
 
+	.widget {
+
 	ul {
 		&:before,
 		&:after {
@@ -65,22 +67,21 @@
 		li {
 			display: inline-block;
 			list-style: none;
+			margin-top: 0;
 
 			.dashicons {
 				color: #fff;
 			}
 
 			a {
-				border: 2px solid $color__blue;
-				margin: 0.2em;
 				padding: 0.2em 0.4em;
 				text-decoration: none;
 
 				&:hover {
-					background: $color__blue;
 					color: #fff;
 				}
 			}
 		}
 	}
+}
 }

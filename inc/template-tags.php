@@ -103,13 +103,13 @@ function looseleaf_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( __( '<span class="dashicons dashicons-category"></span>', 'looseleaf' ) );
 		if ( $categories_list && looseleaf_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( '<span class="dashicons dashicons-category"></span>%1$s', 'looseleaf' ) . '</span>', $categories_list );
+			printf( '<ul class="cat-links"><li>' . __( '<span class="dashicons dashicons-category"></span>%1$s', 'looseleaf' ) . '</li></ul>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '<span class="dashicons dashicons-tag"></span>', __( '<span class="dashicons dashicons-tag"></span>', 'looseleaf' ) );
+		$tags_list = get_the_tag_list( '<li><span class="dashicons dashicons-tag"></span>', __( '</li><li><span class="dashicons dashicons-tag"></span>', 'looseleaf' ), '</li>' );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( ' %1$s', 'looseleaf' ) . '</span>', $tags_list );
+			printf( '<ul class="tags-links">' . __( ' %1$s', 'looseleaf' ) . '</ul>', $tags_list );
 		}
 	}
 

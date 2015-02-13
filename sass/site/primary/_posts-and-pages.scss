@@ -62,6 +62,13 @@
 	.cat-links,
 	.tags-links {
 
+		margin: .6em 0 0 0;
+
+		li {
+			display: inline-block;
+			list-style: none;
+		}
+
 		a {
 			border: 2px solid  $color__gray;
 			color: $color__gray;
@@ -81,6 +88,7 @@
 		.dashicons {
 			background: $color__blue;
 			border: 2px solid  $color__blue;
+			color: #fff;
 		}
 
 		a {
@@ -99,11 +107,12 @@
 		.dashicons {
 			background: lighten($color__gray, 10%);
 			border: 2px solid lighten($color__gray, 10%);
+			color: #fff;
 		}
 
 		a {
 			border: 2px solid lighten($color__gray, 10%);
-			color: ighten($color__gray, 10%);
+			color: lighten($color__gray, 10%);
 
 			&:hover {
 				background: lighten($color__gray, 10%);
@@ -118,7 +127,6 @@
 .entry-meta {
 
 	.dashicons {
-		//color: #fff;
 		line-height: inherit;
 		padding: 0.2em 0.4em;
 		height: auto;
