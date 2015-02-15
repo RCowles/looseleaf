@@ -66,6 +66,9 @@ function looseleaf_setup() {
 		'default-color' => 'f2f2f2',
 		'default-image' => '',
 	) ) );
+
+	// Style the editor
+	add_editor_style( array( 'editor-style.css', looseleaf_fonts_url() ) );
 }
 endif; // looseleaf_setup
 add_action( 'after_setup_theme', 'looseleaf_setup' );
