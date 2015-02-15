@@ -1,14 +1,15 @@
+@charset "UTF-8";
 /*
 Theme Name: Loose Leaf
 Theme URI: http://ryanscowles.com/portfolio/loose-leaf/
 Author: Ryan Cowles
 Author URI: http://ryanscowles.com.com/
-Description: Loose Leaf is a portfolio theme. It includes support for Jetpack's Custom Content Types.
+Description: Loose Leaf is a WordPress portfolio theme. An optional custom header image provides the background for the large call-to-action section on the front page. Jetpack’s Custom Content Types are supported, allowing you to create a masonry portfolio grid, as well as a testimonial page.
 Version: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Loose Leaf
-Tags:
+Tags: black, blue, green, white, two-columns, one-column, right-sidebar, responsive-layout, blavatar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -191,6 +192,9 @@ blockquote {
   padding: 1.6em; }
   blockquote p:last-child {
     margin-bottom: 0; }
+
+cite {
+  font-family: "Sanchez", serif; }
 
 address {
   margin: 0 0 1.5em; }
@@ -1095,6 +1099,8 @@ object {
 12.1 Captions
 --------------------------------------------------------------*/
 .wp-caption {
+  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 1.5em;
   max-width: 100%; }
   .wp-caption img[class*="wp-image-"] {

@@ -12,12 +12,9 @@ dfn, cite, em, i {
 
 blockquote {
 	//background: $color__background-pre;
-	//background: #fff;
 	background: $color__blue-dark;
-	//background: orange;
 	color: #fff;
 	border-left: 4px solid $color__blue-light;
-	//font-family: $font__headline;
 	@include font-size(1.8);
 	font-style: italic;
 	margin: 0 1.5em 1.5em 1.5em;
@@ -26,6 +23,10 @@ blockquote {
 	p:last-child {
 		margin-bottom: 0;
 	}
+}
+
+cite {
+	font-family: $font__headline;
 }
 
 address {
