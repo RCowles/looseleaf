@@ -66,13 +66,6 @@ function looseleaf_setup() {
 		'default-color' => 'f2f2f2',
 		'default-image' => '',
 	) ) );
-
-	// Add support for Jetpack's CPTs
-	add_theme_support( 'jetpack-portfolio' );
-	add_theme_support( 'jetpack-testimonial' );
-
-	// Add support for Jetpack's Site Logo
-	add_theme_support( 'site-logo' );
 }
 endif; // looseleaf_setup
 add_action( 'after_setup_theme', 'looseleaf_setup' );
@@ -114,12 +107,54 @@ function looseleaf_widgets_init() {
 add_action( 'widgets_init', 'looseleaf_widgets_init' );
 
 /**
+ * Google Fonts
+ */
+function looseleaf_fonts_url() {
+    $fonts_url = '';
+
+    /* Translators: If there are characters in your language that are not
+    * supported by Lora, translate this to 'off'. Do not translate
+    * into your own language.
+    */
+    $lato = _x( 'on', 'Lato font: on or off', 'looseleaf' );
+
+    /* Translators: If there are characters in your language that are not
+    * supported by Open Sans, translate this to 'off'. Do not translate
+    * into your own language.
+    */
+    $open_sans = _x( 'on', 'Sanchez font: on or off', 'looseleaf' );
+
+    if ( 'off' !== $lato || 'off' !== $sanchez ) {
+        $font_families = array();
+
+        if ( 'off' !== $lato ) {
+            $font_families[] = 'Lato:400,700,900,400italic';
+        }
+
+        if ( 'off' !== $sanchez ) {
+            $font_families[] = 'Sanchez:400italic,400';
+        }
+
+        $query_args = array(
+            'family' => urlencode( implode( '|', $font_families ) ),
+            'subset' => urlencode( 'latin,latin-ext' ),
+        );
+
+        $fonts_url = add_query_arg( $query_args, '//fonts.googleapis.com/css' );
+    }
+
+    return $fonts_url;
+}
+
+/**
  * Enqueue scripts and styles.
  */
 function looseleaf_scripts() {
 	wp_enqueue_style( 'looseleaf-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'dashicons' );
+
+	wp_enqueue_style( 'looseleaf-fonts', looseleaf_fonts_url(), array(), null );
 
 	wp_enqueue_script( 'looseleaf-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

@@ -15,5 +15,12 @@ function looseleaf_jetpack_setup() {
 		'container' => 'main',
 		'footer'    => 'page',
 	) );
+
+	// Add support for Jetpack's CPTs
+	add_theme_support( 'jetpack-portfolio' );
+	add_theme_support( 'jetpack-testimonial' );
+
+	// Add support for Jetpack's Site Logo
+	add_theme_support( 'site-logo' );
 }
 add_action( 'after_setup_theme', 'looseleaf_jetpack_setup' );
