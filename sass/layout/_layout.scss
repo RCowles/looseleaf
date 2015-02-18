@@ -13,9 +13,14 @@ body {
 }
 
 #content {
-	background: #ffffff;
+	//background: #ffffff;
 	margin: 1.6em auto;
-	padding: 1.6em;
+	//padding: 1.6em;
+
+	.site-main {
+		background: #fff;
+		padding: 1.6em;
+	}
 
 	.home & {
 		background: none;
