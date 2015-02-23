@@ -6,7 +6,7 @@ b, strong {
 	font-weight: bold;
 }
 
-dfn, cite, em, i {
+dfn, cite, em, i, q {
 	font-style: italic;
 }
 
@@ -35,6 +35,7 @@ address {
 
 pre {
 	background: $color__background-pre;
+	border: 1px solid darken($color__background-pre, 10%);
 	font-family: $font__pre;
 	@include font-size(1.5);
 	line-height: $font__line-height-pre;
@@ -42,6 +43,7 @@ pre {
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
+	word-wrap: break-word;
 }
 
 code, kbd, tt, var {

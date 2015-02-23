@@ -19,10 +19,10 @@
 }
 
 .portfolio-sidebar {
+	margin-top: 5.8em; // 3.2 .site-main padding + 2.6 h1.entry-tile line-height
 	//margin-top: 4.1em; /* .entry-content top margin + h1.entry-title line-height - h3 top margin */
 
 	.post-navigation {
-		clear: both;
 
 		&:before,
 		&:after {

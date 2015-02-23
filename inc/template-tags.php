@@ -114,7 +114,7 @@ function looseleaf_entry_footer() {
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<span class="comments-link dashicons dashicons-admin-comments">';
 		comments_popup_link( __( 'Leave a comment', 'looseleaf' ), __( '1 Comment', 'looseleaf' ), __( '% Comments', 'looseleaf' ) );
 		echo '</span>';
 	}

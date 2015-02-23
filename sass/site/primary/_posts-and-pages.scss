@@ -5,8 +5,8 @@
 .hentry {
 	color: $color__gray;
 	border-bottom: 4px solid $color__gray-light;
-	margin: 0 4em 3em 0;
-	padding: 0 0 3em 0;
+	margin: 0 0 4em 0;
+	padding: 0 0 2em 0;
 }
 
 .byline,
@@ -42,13 +42,20 @@
 .entry-meta,
 .entry-footer {
 	@include font-size(1.4);
+	clear: both;
+	display: block;
+	overflow: hidden;
 
 	a {
 		text-decoration: none;
 	}
 
 	.dashicons {
-		//color: lighten($color__gray, 20%);
+		line-height: inherit;
+		padding: 0.2em 0.4em;
+		height: auto;
+		width: auto;
+		@include font-size(1.4);
 	}
 
 	.posted-on,
@@ -57,6 +64,17 @@
 	.tags-links,
 	.comments-link {
 		margin-right: 1em;
+	}
+
+	.comments-link {
+		padding: 1em 0;
+
+		a {
+			color: $color__gray;
+		}
+
+		&.dashicons {
+		}
 	}
 
 	.cat-links,
@@ -123,15 +141,17 @@
 	}
 }
 
+.entry-footer {
+	clear: both;
+	margin: 2em 0;
+	overflow: hidden;
+}
+
 .entry-footer,
 .entry-meta {
 
 	.dashicons {
-		line-height: inherit;
-		padding: 0.2em 0.4em;
-		height: auto;
-		width: auto;
-		@include font-size(1.4);
+
 	}
 
 	.dashicons:before {

@@ -19,5 +19,13 @@ Jetpack's Infinite Scroll module is also supported. You can follow these steps t
 3. (optional) Click the "Configure" button to adjust Infinite Scroll settings.
 
 == Changelog ==
+
+= 0.1.1 =
+2015-02-22
+ - Remove white background from sidebar
+ - Style primary nav menu for mobile
+ - Minor layout adjustments
+
 = 0.1 =
-2015-02-14 - Initial Release
+2015-02-14
+ - Initial Release

@@ -5,11 +5,12 @@ Theme URI: http://ryanscowles.com/portfolio/loose-leaf/
 Author: Ryan Cowles
 Author URI: http://ryanscowles.com.com/
 Description: Loose Leaf is a WordPress portfolio theme. An optional custom header image provides the background for the large call-to-action section on the front page. Jetpack’s Custom Content Types are supported, allowing you to create a masonry portfolio grid, as well as a testimonial page.
-Version: 0.1
+Version: 0.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Loose Leaf
 Tags: black, blue, green, white, two-columns, one-column, right-sidebar, responsive-layout, blavatar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+GitHub Theme URI: rcowles/looseleaf
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -178,7 +179,7 @@ p {
 b, strong {
   font-weight: bold; }
 
-dfn, cite, em, i {
+dfn, cite, em, i, q {
   font-style: italic; }
 
 blockquote {
@@ -201,6 +202,7 @@ address {
 
 pre {
   background: #eee;
+  border: 1px solid #d4d4d4;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 1.5rem;
@@ -208,7 +210,8 @@ pre {
   margin-bottom: 1.6em;
   max-width: 100%;
   overflow: auto;
-  padding: 1.6em; }
+  padding: 1.6em;
+  word-wrap: break-word; }
 
 code, kbd, tt, var {
   font-size: 15px;
@@ -304,7 +307,8 @@ body {
   margin: 1.6em auto; }
   #content .site-main {
     background: #fff;
-    padding: 1.6em; }
+    padding: 2.6em;
+    margin-right: 28%; }
   .home #content {
     background: none;
     padding: 1.6em 0; }
@@ -408,14 +412,13 @@ body {
       margin: 0;
       width: 100%; } }
 
-.site-main {
-  margin: 0 25% 0 0; }
-  @media (max-width: 640px) {
-    .site-main {
-      margin: 0; }
-      .site-main .hentry {
-        margin: 0;
-        padding: 0; } }
+@media (max-width: 640px) {
+  #content .site-main {
+    margin: 0;
+    padding: 1.6em; }
+    #content .site-main .hentry {
+      margin: 0;
+      padding: 0; } }
 
 .site-content .widget-area {
   float: right;
@@ -426,17 +429,17 @@ body {
       float: none;
       width: 100%; } }
 
-.fullwidth.content-area {
+#content .fullwidth.content-area {
   float: none;
   margin: 0;
   max-width: 100%; }
-  .fullwidth.content-area .hentry {
+  #content .fullwidth.content-area .hentry {
     margin: 0; }
-  .fullwidth.content-area .site-main {
+  #content .fullwidth.content-area .site-main {
     margin: 0; }
-  .fullwidth.content-area .site-main .comment-navigation,
-  .fullwidth.content-area .site-main .paging-navigation,
-  .fullwidth.content-area .site-main .post-navigation {
+  #content .fullwidth.content-area .site-main .comment-navigation,
+  #content .fullwidth.content-area .site-main .paging-navigation,
+  #content .fullwidth.content-area .site-main .post-navigation {
     margin: 0 0 1.5em 0;
     overflow: hidden; }
 
@@ -450,41 +453,41 @@ body {
   margin-bottom: 15px;
   text-align: center; }
 
-.portfolio-sidebar .post-navigation {
-  clear: both; }
+.portfolio-sidebar {
+  margin-top: 5.8em; }
   .portfolio-sidebar .post-navigation:before, .portfolio-sidebar .post-navigation:after {
     content: "";
     display: table; }
   .portfolio-sidebar .post-navigation a {
     text-decoration: none; }
-.portfolio-sidebar h3 {
-  border-left: 4px solid #84DFFF;
-  color: #7C7C7C;
-  display: block;
-  line-height: 16px;
-  margin: .6em 0 .4em 0;
-  padding: 0 0 0 4px; }
-.portfolio-sidebar .widget ul {
-  clear: both;
-  list-style: none;
-  margin: 0 0 1.6em 0;
-  padding: 0; }
-  .portfolio-sidebar .widget ul:before, .portfolio-sidebar .widget ul:after {
-    content: "";
-    display: table; }
-  .portfolio-sidebar .widget ul:after {
-    clear: both; }
-  .portfolio-sidebar .widget ul li {
-    display: inline-block;
+  .portfolio-sidebar h3 {
+    border-left: 4px solid #84DFFF;
+    color: #7C7C7C;
+    display: block;
+    line-height: 16px;
+    margin: .6em 0 .4em 0;
+    padding: 0 0 0 4px; }
+  .portfolio-sidebar .widget ul {
+    clear: both;
     list-style: none;
-    margin-top: 0; }
-    .portfolio-sidebar .widget ul li .dashicons {
-      color: #fff; }
-    .portfolio-sidebar .widget ul li a {
-      padding: 0.2em 0.4em;
-      text-decoration: none; }
-      .portfolio-sidebar .widget ul li a:hover {
+    margin: 0 0 1.6em 0;
+    padding: 0; }
+    .portfolio-sidebar .widget ul:before, .portfolio-sidebar .widget ul:after {
+      content: "";
+      display: table; }
+    .portfolio-sidebar .widget ul:after {
+      clear: both; }
+    .portfolio-sidebar .widget ul li {
+      display: inline-block;
+      list-style: none;
+      margin-top: 0; }
+      .portfolio-sidebar .widget ul li .dashicons {
         color: #fff; }
+      .portfolio-sidebar .widget ul li a {
+        padding: 0.2em 0.4em;
+        text-decoration: none; }
+        .portfolio-sidebar .widget ul li a:hover {
+          color: #fff; }
 
 /*--------------------------------------------------------------
 4.0 Forms
@@ -681,11 +684,21 @@ a {
     display: block; }
 
   .main-navigation ul {
-    display: none; } }
+    display: none; }
+    .main-navigation ul li {
+      display: block;
+      float: none;
+      padding: 0; }
+      .main-navigation ul li a {
+        padding: 1em; }
+      .main-navigation ul li.current-menu-item a {
+        background: #3e6977; } }
 .site-main .comment-navigation,
 .site-main .paging-navigation,
 .site-main .post-navigation {
-  margin: 0 4em 1.5em 0;
+  clear: both;
+  display: block;
+  margin: 1.5em 4em 1.5em 0;
   overflow: hidden; }
   .site-main .comment-navigation a,
   .site-main .paging-navigation a,
@@ -900,8 +913,8 @@ a {
 .hentry {
   color: #7C7C7C;
   border-bottom: 4px solid #F2F2F2;
-  margin: 0 4em 3em 0;
-  padding: 0 0 3em 0; }
+  margin: 0 0 4em 0;
+  padding: 0 0 2em 0; }
 
 .byline,
 .updated:not(.published) {
@@ -927,10 +940,21 @@ a {
 .entry-meta,
 .entry-footer {
   font-size: 14px;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  clear: both;
+  display: block;
+  overflow: hidden; }
   .entry-meta a,
   .entry-footer a {
     text-decoration: none; }
+  .entry-meta .dashicons,
+  .entry-footer .dashicons {
+    line-height: inherit;
+    padding: 0.2em 0.4em;
+    height: auto;
+    width: auto;
+    font-size: 14px;
+    font-size: 1.4rem; }
   .entry-meta .posted-on,
   .entry-meta .byline,
   .entry-meta .cat-links,
@@ -942,6 +966,12 @@ a {
   .entry-footer .tags-links,
   .entry-footer .comments-link {
     margin-right: 1em; }
+  .entry-meta .comments-link,
+  .entry-footer .comments-link {
+    padding: 1em 0; }
+    .entry-meta .comments-link a,
+    .entry-footer .comments-link a {
+      color: #7C7C7C; }
   .entry-meta .cat-links,
   .entry-meta .tags-links,
   .entry-footer .cat-links,
@@ -999,14 +1029,10 @@ a {
       border: 2px solid #969696;
       color: #fff; }
 
-.entry-footer .dashicons,
-.entry-meta .dashicons {
-  line-height: inherit;
-  padding: 0.2em 0.4em;
-  height: auto;
-  width: auto;
-  font-size: 14px;
-  font-size: 1.4rem; }
+.entry-footer {
+  clear: both;
+  margin: 2em 0;
+  overflow: hidden; }
 
 .edit-link {
   clear: both;
