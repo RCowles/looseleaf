@@ -6,7 +6,19 @@
  */
 ?>
 
+<div class="entry-content">
+	<?php
+		/* translators: %s: Name of current post */
+		the_content( sprintf(
+			__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'looseleaf' ),
+			the_title( '<span class="screen-reader-text">"', '"</span>', false )
+		) );
+	?>
 
-	<div id="frontpage-widgets" class="wrapper">
-		<?php dynamic_sidebar( 'frontpage-widgets' ); ?>
-	</div><!-- #frontpage-widgets !-->
+	<?php
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . __( 'Pages:', 'looseleaf' ),
+			'after'  => '</div>',
+		) );
+	?>
+</div><!-- .entry-content -->
