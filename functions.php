@@ -125,7 +125,7 @@ function looseleaf_fonts_url() {
     * supported by Open Sans, translate this to 'off'. Do not translate
     * into your own language.
     */
-    $open_sans = _x( 'on', 'Sanchez font: on or off', 'looseleaf' );
+    $sanchez = _x( 'on', 'Sanchez font: on or off', 'looseleaf' );
 
     if ( 'off' !== $lato || 'off' !== $sanchez ) {
         $font_families = array();
