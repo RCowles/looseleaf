@@ -45,6 +45,12 @@ Jetpack's Infinite Scroll module is also supported. You can follow these steps t
 
 ## Changelog
 
+#### 1.0
+2015-05-22
+
+ - Other: Reformat readme.txt
+ - Other: Fix looseleaf_fonts_url() in functions.php
+
 #### 0.1.2
 2015-03-20
 
