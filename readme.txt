@@ -40,6 +40,15 @@ To create a testimonial page, first activate Jetpack, and then follow these step
 2. Enter the [testimonials] shortcode.
 3. Publish your page.
 
+= How do I add homepage widgets? =
+
+To create circular homepage widgets, first activate Jetpack, and then follow these steps:
+
+1. Navigate to Appearance > Customize > Widgets.
+2. Add an "Image (Jetpack)" widget to the Frontpage sidebar.
+3. Enter the required settings.
+4. Repeat steps 1-3 as needed for additional widgets.
+
 = How do I use Infinite Scroll? =
 
 Jetpack's Infinite Scroll module is also supported. You can follow these steps to enable it:
